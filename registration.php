@@ -10,7 +10,7 @@ session_start();
 
 $nombre = $_POST['firstname'];
 $apellido = $_POST['lastname'];
-$correo = $_POST['email'];
+$correo = trim($_POST['email']);
 $pass = $_POST['pass'];
 
 if(empty($nombre) || empty($apellido) || empty($correo) || empty($pass)){

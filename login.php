@@ -11,7 +11,7 @@
 //error_reporting(0);
 session_start();
 
-$email = $_POST['email'];
+$email = trim($_POST['email']);
 $pass = $_POST['pass'];
 
 if(empty($email) || empty($pass)){
