@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="shortcut icon" href="icono.png"/>
+	<div class="pestanya">
+		<title>Bar el Sindicat</title>
+	</div>
+	<script src="jquery.js"></script>
+	<script src="jquery.dataTables.min.js"></script>
+</head>
+
+<body bgcolor="white" text="black">
+	<header>
+		<div class="titulo"> <!--Titulo fijo de la página principal-->
+		<h1>Bar el sindicat</h1>
+		<h2>Enjoy our gastronomic experience</h2>
+		
+	</header>
+	<div id="navegador">
+	<nav>
+		<ul type="circle"> <!--Navegador -->
+			<li> <a href="index.html" style="color:white">Main page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li> <a href="carta.html" style="color:white">Menu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li> <a href="AcercaDeNosotros.html" style="color:white">About us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li> <a href="contacto.html" style="color:white">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+		</ul>
+	</nav>
+	</div>
+	</div>
+	<div class="contenido">
+	<div class="explicacion">
+	
+	</div>
+	<div class="expcarta">
+	<section> <!--Segundo texto de la página -->
+		<br><br><p><h1>Discover our menu</h1></p>
+		<p>Our menu consists of a mixture of different dishes, among them, our specialty, our delicious hamburgers of different types that will not leave you indifferent after trying them.</p>
+		<div class = "barraLateral">
+		<aside> <!--login -->
+			<br><br>
+		<form action="login.php" method="POST" class="loginForm">
+			<p>Login:</p>
+			<input type="email" name="email" size="15">
+			<p>Password:</p>
+			<input type="password" name="pass" size="15">
+			<p><input type="submit" name="submit" value="Login"></p>
+			<p>Still not registered? <br>Register <a href="registro.html" style="color:black">here</a></p>
+			<br><br>
+		</form>
+		</aside>
+		</div>
+		<figure>
+			<img src=https://barelsindicat.files.wordpress.com/2021/10/restaurante.jpg?w=806 height="400">
+			<figcaption>
+				Source: <a href="https://barelsindicat.wordpress.com" target = "_blank">barelsindicat.wordpress.com</a>  
+			</figcaption>
+		</figure>
+
+	</section>
+	</div>
+	<div class="reserva"> <!--Formulario de reserva -->
+	<section>
+		<br><br><br><br><p><h3>BOOKINGS</h3></p>
+		<p>To reserve a table, call us at 692 94 99 91 or use the following form.</p>
+		<form action="reservamesa" method="post">
+ 		<ul>
+ 		<li>
+    		<p>Name:</p>
+   		 <input type="text" name="user_name" size="15" maxlength="20">
+  		</li>
+  		<br>
+  		<li>
+   			<p>Telephone number:</p>
+   			<input type="tel" name="user_num" size="15" maxlength="9">
+  		</li>
+  		<br>
+  		<li>
+    		<p>Date:</p>
+   			<input type="date" name="fecha" size="15">
+ 		</li>
+ 		<br>
+ 		<li>
+    		<p>Hour:</p>
+   			<input type="time" name="hora" size="15">
+ 		</li>
+ 		<br>
+ 		<li>
+    		<p>Number of persons:</p>
+   			<input type="number" name="personas" size="15">
+ 		</li>
+ 		<br>
+ 		<li>
+    		<p>Something to add?:</p>
+   			  <textarea id="msg" name="user_message" rows="5"></textarea>
+ 		</li>
+		</form>
+		<br>
+			<li class="button">
+  				<button type="submit">Enviar</button><br><br><br>
+			</li>
+		</ul>
+	</form>
+	</section>
+	</div>
+
+
+	<!--Buscador-->
+	<div class="buscador">
+	<h3>Here you can search every part of our page!</h3><br><br>
+	<input type="search" name="buscador" id="input-search" placeholder="Search here!">
+
+	<div class="content-search">
+		<div class="content-table">
+			<table id="tablaBuscador">
+				<thead>
+					<tr>
+						<td></td>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>
+							<a href="#">Main</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<a href="carta.html">Menu</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<a href="AcercaDeNosotros.html">About us</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<a href="contacto.html">Contact</a>
+						</td>
+					</tr>
+
+				</tbody>
+
+			</table>
+		</div>
+	</div>
+</div>
+
+
+	<div class="final">
+	<section>
+		<div class="titfin"> <!--Texto final con informacion -->
+			<p><h3>Bar el Sindicat</h3></p>
+		</div>
+		<p><h4>Opening hours::</h4></p><br>
+		<p>Mon: closed Tue – Sun: 11:30 h – 22:00 h</p><br>
+		<p><h4>Location:</h4></p><br>
+		<p>Carrer Major, 18 Constantí, Tarragona (43120)</p><br>
+		<p><h4>Reserva:</h4></p><br>
+		<p>You can make your reservation by calling 692 94 99 91, writing us an email at
+barelsindicat@gmail.com or by filling out the form above</p><br>
+	</section>
+	</div>
+	<div class="copy">
+	<footer> <!--Footer -->
+		Author: Iván Menacho Domínguez Subject: SAW (Erasmus at Genoa) Copyright &copy;	
+	</footer>
+	</div>
+	</div>
+	<script src="search.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="shortcut icon" href="icono.png"/>
+	<meta charset="utf-8">
+</head>
+	<header>
+		<div class="titulofijo">
+		<h1>Bar el sindicat</h1>
+		<h2>Enjoy our gastronomic experience</h2>
+		</div>
+	</header>
+<body>
+	<div id="navegadorfijo">
+	<nav>
+		<ul type="circle"> <!--Navegador-->
+			<li> <a href="index.html" style="color:white">Main  page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li> <a href="carta.html" style="color:white">Menu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li> <a href="AcercaDeNosotros.html" style="color:white">About us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li> <a href="contacto.html" style="color:white">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+		</ul>
+	</nav>
+	</div>
+
+
+	<div class="contenidocontacto">
+	<section><h2>Contact</h2> <!--Información de contacto -->
+	<p>Feel free to contact us using the contact information below, or send us a message using the form.</p><br><br>
+
+	<div class = "barraLateral">
+		<aside> <!--login -->
+			<br><br>
+			<form action="login.php" method="POST" class="loginForm">
+			<p>Login:</p>
+			<input type="text" name="user_name" size="15" maxlength="20">
+			<p>Password:</p>
+			<input type="password" name="password" size="15" maxlength="20">
+			<p><input type="submit" name="login" value="Login"></p>
+			<p>Still not registered? <br>Registrate <a href="registro.html" style="color:black">here</a></p>
+			<br><br>
+		</form>
+		</aside>
+		</div>
+	<h3>Get in contact</h3><br>
+	<a href="https://www.google.com/maps/search/Carrer+Major,+18,+Ciudad,+43120,+Constantí,+Tarragona,+España/@41.1539253,1.1932976,14z/data=!3m1!4b1" target="_blank" style="color:black">Carrer Major, 18 <br>Constantí(43120), Tarragona<br><br></a>
+	Send us a mail on barelsindicat@gmail.com<br><br>
+	Call us at +34 692 94 99 91<br><br>
+	Contact us in <a href="https://www.instagram.com/barelsindicat/" target="_blank" style="color:black">Instagram</a><br><br>
+	</section>
+	<section>
+		<h2>Send us a message through this form</h2><br>
+		Name:(Mandatory)<br>
+		<input type="text" name="username"><br><br>
+		Email: (Mandatory)<br>
+		<input type="email" name="email"><br><br>
+		Messahge: (Mandatory)<br>
+		<textarea id="msg" name="user_message" rows="5"></textarea><br><br>
+		<button type="submit">Enviar</button><br><br>
+	</div>
+	</section>
+</body>
+</html>

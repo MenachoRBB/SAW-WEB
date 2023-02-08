@@ -1,0 +1,254 @@
+body{ /*Estilo del body*/
+	font-family: "Arial";
+	color: black;
+	background: white; 
+}
+
+*{ /* Quito los margenes por defecto del navegador*/
+	padding: 0;
+ 	margin: 0;
+}
+
+.titulo{ /* Estilo del titulo*/
+
+	text-align: center;
+	background: yellow;
+	color: black;
+	position: fixed;
+	width: 100%;	
+	z-index: 999;
+	top: 0px;
+}
+
+#navegador ul{ /* Estilo de la lista no ordenada de la barra de navegacion*/
+  	list-style-type: none;
+  	text-align: center;
+ 	color: white;
+	background: black;
+	position: fixed;
+	margin-top: 64px;
+	margin-left: 0px;
+	width: 100%;
+	z-index: 999;
+	top: 0px;
+}
+
+#navegador li{ /*Estilo de la lista ordenada de la barra de navegacion */
+	display: inline;
+	text-align: center;
+}
+
+
+
+.explicacion{ /*Estilo de la explicacion */
+	background: white;
+	color: black;
+	text-align: center;
+}
+
+.explicacion{ /*Aumentamos el tamaño del texto al pasar el raton*/
+	font-size: 30px;
+}
+
+.copy{ /*Estilo del footer */
+	color: white;
+	background-color: black;
+}
+.contenido{ /* Estilo de la etiqueta de classe contenido*/
+	position: relative;
+	top: 40px;
+	z-index: 99;
+}
+
+.expcarta{ /* Estilo de la explicacion de la carta */
+	text-align: center;
+	margin-top: 75px;
+}
+
+.barraLateral{ /*Estilo de la barra lateral */
+margin-left: 1200px;
+position: absolute;
+background-color: yellow;
+border: black 5px solid;
+text-align: center;
+}
+
+.reserva{ /* Estilo del formulario de reserva*/
+	text-align: center;
+}
+
+.registro{ /*Estilo del formulario de registro */
+	margin-top: 0px;
+	text-align: center;
+}
+
+.registrate{/* Estilo del titulo de la página de registro*/
+	background-color: black;
+	color: white;
+	text-align: 
+}
+
+.final{ /* Estilo de la parte final*/
+	text-align: center;
+	background-color: yellow;
+}
+
+.titfin{ /*Estilo de la parte del titulo del final */
+	background-color: black;
+	color: white;
+}
+
+.indicecarta{ /*Estilo del indice de la carta */
+	list-style-type: circle;
+	margin-left: 80px;
+}
+
+ul.identacion{ /* Identacion para el indice de la carta*/
+	margin-left: 30px;
+}
+
+.titulofijo{ /*Estilo de los titulos y barra de navegacion fijos */
+	text-align: center;
+	background: yellow;
+	color: black;
+	width: 100%;	
+	z-index: 999;
+}
+
+#navegadorfijo{ /* Estilo del navegador fijo*/
+  	list-style-type: none;
+  	text-align: center;
+ 	color: white;
+	background: black;
+	width: 100%;
+	z-index: 999;
+}
+
+#navegadorfijo li{ /*Estilo para los elementos de la lista del navegador fijo */
+	display: inline;
+	text-align: center;
+}
+
+.parapicar{ /* Estilo de una tabla de la carta*/
+	text-align: center;
+}
+
+.ensaladas{ /* Estilo de una tabla de la carta*/
+	text-align: center;
+}
+
+.tablas{ /* Estilo de una tabla de la carta*/
+	text-align: center;
+}
+
+.bocadillos{ /* Estilo de una tabla de la carta*/
+	text-align: center;
+}
+
+.hamburguesas{ /* Estilo de una tabla de la carta*/
+	text-align: center;
+}
+
+.torradas{ /* Estilo de una tabla de la carta*/
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+p{ /*Estilo que se aplica a todos los parrafos*/
+	font-size: 15px;
+}
+
+.video{ /*Estilo del video */
+	text-align: center;
+}
+
+h1,h2,h3,h4,h5,h5{ /*Estilo para los titulos */
+	font-family: Times New Roman;
+}
+
+.contentinfo{ /* Estilo para la etiqueta de clase content info*/
+	margin-top: 40px;
+}
+
+.nosencontramos{ /*Estilo para la etiqueta de clase nos encontramos */
+	text-align: center;
+}
+
+.contenidocontacto{ /* Estilo para el contenido del contacto*/
+	margin-top: 20px;
+	text-align: center;
+}
+
+.slideshow{ /*Estilo del pase de diapositivas*/
+	text-align: center;
+}
+
+.buyOnline{
+	text-align: center;
+}
+
+#input-search{
+	width: 300px;
+	height: 40px;
+	font-size: 20px;
+	text-indent: 10px;
+}
+
+.content-search{
+	width: 100%;
+	height: 100vh;
+	left: 0;
+	display: none;
+	margin-left: 715px;
+}
+
+.content-table{
+	width: 80%;
+	max-height: 200px;
+	height: auto;
+	margin-left: 10px;
+	padding: 10px;
+	overflow-y: visible;
+	overflow-x: hidden;
+
+}
+
+.content-table table{
+	width: 100%;
+}
+
+.content-table tbody tr td a{
+	display: block;
+	padding: 10px;
+	color: blue;
+	text-decoration: none;
+}
+
+.content-table tbody tr td a:hover{
+	background: rgba(0, 0, 0, 0.3);
+}
+
+/*Jquery id's that I don't need*/
+#dataTables_length, #tablaBuscador_length, #tablaBuscador_filter, #tablaBuscador_info, #tablaBuscador_paginate{
+	display: none;
+}
+
+.buscador{
+	text-align: center;
+}
+
+#submit {
+ color: black;
+ font-size: 15;
+ width: 135px;
+ height: 60px;
+ border: none;
+ margin: 0;
+ padding: 0;
+ background-color: yellow;
+}
+
+#submit:hover{
+	color: blue;
+	background-color: #eed752;
+}
