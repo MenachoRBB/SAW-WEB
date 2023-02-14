@@ -32,8 +32,9 @@
 	echo "<table>";
 	echo "<tr><th>Name</th><th>Timestamp</th></tr>";
 	while ($fila = mysqli_fetch_assoc($res)) {
-	echo "<tr><td>" . $fila["name"] . "</td><td>" . $fila["timest"] . "</td><td>" . "</td></tr>";
-	}
+    $fecha = date('d/m/Y H:i:s', $fila["timest"]); // Convierte el timestamp a fecha y hora
+    echo "<tr><td>" . $fila["name"] . "</td><td>" . $fecha . "</td><td>" . "</td></tr>"; // Muestra la fecha y hora en lugar del timestamp
+}
 	echo "</table>";
 
 	mysqli_free_result($res);
