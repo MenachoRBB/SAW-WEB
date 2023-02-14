@@ -42,7 +42,7 @@ if(!isset($_SESSION['email']))
 		<div class="nosencontramos">
 			<div id="bordeBoton">
 				<form action="updateCoffe.php" target="_blank">
-					<input type="submit" name="submit" value="Donate a coffe!" id="submit" />
+				<button type="submit" name="submit" value="Donate a coffe!" id="submit">Donate!</button>
 				</form>
 			</div>
 	</div>
