@@ -19,11 +19,17 @@ if(empty($nombre) || empty($apellido) || empty($correo) || empty($pass)){
 
 include("connection.php");
 
-$hash = password_hash($pass, PASSWORD_DEFAULT);
 
-//Sanititzar 
+//Sanitization of the input
+$_name = mysqli_real_escape_string($conn, $_POST['firstname']);
+$_lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
+$_email = mysqli_real_escape_string($conn, $_POST['email']);
+$_pass = mysqli_real_escape_string($conn, $_POST['pass']);
+
+
+$hash = password_hash($_pass, PASSWORD_DEFAULT);
 $stmt = mysqli_prepare($conn, "INSERT INTO usuarios2 (firstname, lastname, email, password) VALUES (?,?,?,?)");
-mysqli_stmt_bind_param($stmt, 'ssss', $nombre, $apellido, $correo, $hash);
+mysqli_stmt_bind_param($stmt, 'ssss', $_name, $_lastname, $_email, $hash);
 mysqli_stmt_execute($stmt);
 
 if (mysqli_affected_rows($conn)==1)
