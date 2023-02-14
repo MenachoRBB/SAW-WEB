@@ -16,13 +16,21 @@ $pass = $_POST['pass'];
 
 if(empty($email) || empty($pass)){
 	echo 'There is something empty';
+}
+//Validation of the email
+if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+		echo "<h1>There was a problem</h1>";
+		exit();
 }else{
 
 include("connection.php");
 
-//Sanitizar
+//SanitizATION
+$_email = mysqli_real_escape_string($conn, $email);
+$_pass = mysqli_escape_string($conn, $pass);
+
 $stmt = mysqli_prepare($conn, "SELECT * FROM usuarios2 where email = ?");
-mysqli_stmt_bind_param($stmt, 's', $email);
+mysqli_stmt_bind_param($stmt, 's', $_email);
 mysqli_stmt_execute($stmt);
 
 $res = mysqli_stmt_get_result($stmt);
@@ -36,7 +44,7 @@ echo $rows;
 if($rows == 1){
 	$row = mysqli_fetch_assoc($res);
 	$hash = $row['password'];
-	if(password_verify($pass, $hash)){
+	if(password_verify($_pass, $hash)){
 		echo '<script>alert("Successfull log in");</script>';
 		
 		$_SESSION['loggedin'] = true;

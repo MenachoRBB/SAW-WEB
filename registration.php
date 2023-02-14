@@ -15,6 +15,11 @@ $pass = $_POST['pass'];
 
 if(empty($nombre) || empty($apellido) || empty($correo) || empty($pass)){
       echo 'There\'s an error with your registration, try again';
+}
+//Validation of the email
+if(!filter_var($correo, FILTER_VALIDATE_EMAIL)){
+            echo "<h1>There was a problem</h1>";
+            exit();
 }else{
 
 include("connection.php");
